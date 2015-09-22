@@ -1,0 +1,109 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+
+<title>My First Parse App</title>
+<meta name="description" content="My Parse App">
+<meta name="viewport" content="width=device-width">
+<!-- <link rel="stylesheet" href="css/reset.css"> -->
+<!-- <link rel="stylesheet" href="css/styles.css"> -->
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/firstparse.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="header">
+				<h1 class="title">First Parse Web Application</h1>
+				<p class="description">Example login/register page with Bootstrap, HTML, JavaScript, Parse.</p>
+			</div>
+			<div class="main-container"></div>
+
+		</div>	<!-- /row -->
+	</div>	<!-- /container -->
+	<!-- text/x-handlebars-template -->
+	<script id="login-tpl" type="text/x-handlebars-template"> 
+		<div class="mbr-login">
+    		<form class="form-signin" role="form">
+            	<h2 class="form-signin-heading">Please sign in</h2>
+            	<input type="text" name="username" class="form-control" placeholder="Mobile Number" required autofocus>
+            	<input type="password" name="password" class="form-control" placeholder="Password" required>
+            	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+				<button class="sign-up btn btn-lg btn-primary btn-block">Register new user</button>
+    		</form>
+          	
+		</div>
+	</script>
+	
+	<script id="welcome-tpl"type="text/x-handlebars-template">
+		<div class="main-app">
+			<h2>Welcome, {{name}}!!</h2>
+			<img src='{{file.url}}' class="user-image"></img>
+			<div class="user-menu">
+				<ul class="nav nav-tabs" style="height:7%;" >
+			        <li class="active"><a href="#repeatify" data-toggle="tab">Repeatify</a></li>
+			        <li><a href="#fibonacci" data-toggle="tab">Fibonacci</a></li>
+		    	</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="repeatify">
+					<h4>REPEATIFY</h4>
+				    	<div class="rep-input">
+				    		<form class="form-repeatify">
+				    			<input id="input-repeatify" type="number" name="rep-number" class="form-control" placeholder="3" required>
+				    			<input type="button" value="Submit" class="repeatify btn btn-lg btn-primary btn-block" />
+				    		</form>
+				    	</div>
+				    	<h5 id="repeatify-result">Result: <span class='result'></span></h5>
+				    	
+				</div>
+				<div class="tab-pane" id="fibonacci">
+				    <h4>FIBONACCI</h4>
+				    	<div class="fib-input">
+		    				<form class="form-fibonacci">
+		    					<input id="input-fibonacci" type="number" name="fib-number" class="form-control" placeholder="10" required>
+								<input type="button" value="Submit" class="fibonacci btn btn-lg btn-primary btn-block" />		    					
+		    				</form>
+		    			</div>
+						<h5 id="fibonacci-result">Result: <span class='result'></span></h5>
+				</div>
+			</div>
+			<button class="logout btn btn-lg btn-primary btn-block">Log Out</button>
+		</div>
+	</script>
+		
+	<script id="signup-tpl" type="text/x-handlebars-template">
+		<div class="mbr-login">
+			<form class="form-signup" role="form">
+				<h2 class="form-signin-heading">Register New User</h2>
+				<input type="text" name="name" class="form-control" placeholder="Name" required autofocus>
+				<input type="text" name="username" class="form-control" placeholder="Mobile number for Username" required>
+				<input type="text" name="email" class="form-control" placeholder="Email address" required>
+				<div class="register-switch">
+      				<input type="radio" name="sex" value="F" id="sex_f" class="register-switch-input" checked="">
+      				<label for="sex_f" class="register-switch-label">Female</label>
+      				<input type="radio" name="sex" value="M" id="sex_m" class="register-switch-input">
+      				<label for="sex_m" class="register-switch-label">Male</label>
+    			</div>
+				<label class="photos_label form-control">Upload Photos</label>
+				<input id="photo-file" type="file" name="file" class="form-control photos" placeholder="Photos" required>
+		        <input type="text" name="address" class="form-control" placeholder="Address" required>
+				<input type="password" name="password" class="form-control" placeholder="Password" required>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>	
+			</form>
+		</div>
+	</script>
+
+	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+	<script	src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/firstparse.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.description {
+  font-size: 20px;
+  color: #999;
+}
+.form-signin, .form-signup,
+.main-app {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading {
+  margin-bottom: 10px;
+}
+.form-signin .form-control,
+.form-signup .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"],
+.form-signup input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.mbr-login, .main-app {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.main-app{
+	height: 50%;
+}
+#signup{
+  color: #198fff;
+}
+.register-switch {
+    height: 41px;
+    padding: 4px;
+    background: #6db244;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #60a83a, #7dbe52);
+    background-image: -moz-linear-gradient(top, #60a83a, #7dbe52);
+    background-image: -o-linear-gradient(top, #60a83a, #7dbe52);
+    background-image: linear-gradient(to bottom, #60a83a, #7dbe52);
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.05), inset 1px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.02);
+}
+.register-switch-label {
+    float: left;
+    width: 50%;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.register-switch-input:checked + .register-switch-label {
+    font-weight: 500;
+    color: #434248;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    background: white;
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
+    background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.register-switch-input {
+    display: none;
+}
+label.photos_label {
+    float: left;
+    width: 30%;
+    color: #ABABAB;
+    font-size: small !important;
+    height: 46px !important;
+    padding: 7px !important;
+    margin: 0px;
+    font-family: inherit;
+    font-weight: normal;
+}
+input.form-control.photos {
+    float: right;
+    width: 70%;
+}
+.form-repeatify .form-control,
+.form-fibonacci .form-control{
+	width: 40%;
+    float: left;
+    padding-left: 20%;
+}
+.form-repeatify input.btn,
+.form-fibonacci input.btn{
+	width: 30%;
+	padding: 4px;
+}
+span.result {
+    word-wrap: break-word;
+}
+.user-image{
+	height: 52px;
+    float: right;
+    border: 2px solid;
+    border-color: blueviolet;
+    margin-top: -11px;
+}
